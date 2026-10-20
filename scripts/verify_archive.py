@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: MIT
 """Check archived input hashes, paired data, result counts, and bounds."""
 
-import argparse
 import csv
 import hashlib
 import json
@@ -28,9 +27,6 @@ def check(test, message):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--write-manifest", action="store_true")
-    args = parser.parse_args()
     provenance = json.loads((RECORDED / "provenance.json").read_text())
     for campaign, record in provenance.items():
         for name, checksum in record["recorded_csv_sha256"].items():
@@ -65,18 +61,6 @@ def main():
     for row in paired:
         check(float(row["two_stage_upper"]) <= float(row["static_upper"]), "static restriction violated")
         check(float(row["two_stage_upper"]) <= float(row["nominal_assignment_upper"]), "nominal restriction violated")
-    manifest = ROOT / "SHA256SUMS"
-    ignored = {".git", "__pycache__", "runs"}
-    if args.write_manifest:
-        files = [path for path in ROOT.rglob("*") if path.is_file()
-                 and path != manifest and path.name != ".DS_Store"
-                 and not any(part in ignored or part.startswith("build") for part in path.relative_to(ROOT).parts)]
-        manifest.write_text("".join(f"{sha(path)}  {path.relative_to(ROOT).as_posix()}\n" for path in sorted(files)))
-        print(f"Wrote {len(files)} release-file hashes")
-    elif manifest.exists():
-        for line in manifest.read_text().splitlines():
-            checksum, name = line.split("  ", 1)
-            check(sha(ROOT / name) == checksum, f"release file changed: {name}")
     print(json.dumps({"benchmark_instances": len(benchmark), "algorithmic_results": totals, "model_comparison_cases": len(paired), "status": "passed"}, indent=2))
 
 

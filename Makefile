@@ -34,7 +34,7 @@ CPCCG := $(BUILD)/ccg/master_with_cp.o $(BUILD)/ccg/cp_master.o $(BUILD)/ccg/ora
 PROGRAMS := agv_hig agv_lbbd agv_ccg agv_initialize agv_schedule_metrics run_case agv_model_compare
 VALIDATION := common_validation hig_validation hig_alignment lbbd_packing lbbd_structural ccg_validation model_comparison
 
-.PHONY: all cp check check-cp check-data manifest clean
+.PHONY: all cp check check-cp check-data clean
 all: $(addprefix $(BUILD)/,$(PROGRAMS))
 cp: $(BUILD)/agv_ccg_cp
 
@@ -114,8 +114,6 @@ check-cp: all cp $(BUILD)/tests/ccg_cp_validation
 	LC_ALL=C $(PYTHON) tests/integration_smoke.py --build $(BUILD) --cp
 check-data:
 	$(PYTHON) scripts/verify_archive.py
-manifest:
-	$(PYTHON) scripts/verify_archive.py --write-manifest
 clean:
 	@$(PYTHON) -c "from pathlib import Path; import shutil; root=Path.cwd().resolve(); path=Path('$(BUILD)').resolve(); assert path.parent==root and path.name.startswith('build'); shutil.rmtree(path,ignore_errors=True)"
 

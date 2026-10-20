@@ -22,12 +22,10 @@ or archival DOI has been assigned to this repository.
   title = {Two-Stage Robust Scheduling of Heterogeneous Automated Guided Vehicles
            with Budgeted Energy Uncertainty: Code and Data},
   year = {2026},
-  version = {1.0.0},
+  version = {1.0.1},
   url = {https://github.com/Superhead666/two-stage-robust-agv-scheduling}
 }
 ```
-
-Machine-readable citation information is in [CITATION.cff](CITATION.cff).
 
 ## Repository contents
 
@@ -44,8 +42,7 @@ Machine-readable citation information is in [CITATION.cff](CITATION.cff).
 | `results/figures` | Native PGFPlots sources for the sensitivity figures |
 | `scripts` | Experiment execution, archive checks, and postprocessing |
 | `tests` | Small correctness and integration checks |
-| `docs` | Data format, experiment mapping, and reproducibility information |
-| `SHA256SUMS` | SHA-256 checksums for the release files |
+| `docs` | Data format and experiment mapping |
 
 The package excludes solver distributions, license files, compiled executables,
 development logs, exploratory experiment folders, and obsolete experiment
