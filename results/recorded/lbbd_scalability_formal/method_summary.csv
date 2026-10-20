@@ -1,0 +1,2 @@
+configuration,runs,optimal,hig_runs,hig_found_final_incumbent,hig_already_certified,exact_proved_hig_incumbent,incumbent_improved,lower_bound_improved_only,no_final_bound_improvement,median_initial_gap,median_final_gap,median_relative_gap
+lbbd-hig,320,312,320,218,4,211,102,3,0,6.0,0.0,0.0

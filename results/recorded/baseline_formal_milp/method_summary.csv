@@ -1,0 +1,3 @@
+configuration,runs,optimal,hig_runs,hig_found_final_incumbent,hig_already_certified,exact_proved_hig_incumbent,incumbent_improved,lower_bound_improved_only,no_final_bound_improvement,median_initial_gap,median_final_gap,median_relative_gap
+milp-ccg-basic,160,56,0,0,0,0,0,0,0,,14.0,0.316666666667
+milp-ccg-hig,160,54,160,154,4,47,6,33,70,6.0,3.0,0.110101010101

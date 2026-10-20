@@ -1,0 +1,91 @@
+{
+  "lbbd_scalability_formal": {
+    "original_campaign": "lbbd_scalability_formal",
+    "recorded_csv_sha256": {
+      "method_summary.csv": "6567a00e7fbe507e623e8f5dba13e4ac62283f93d136e8eae4a1a7eeb2d1ed37",
+      "specifications.csv": "db32baf81f09a352fc8e93124fe896199b3398abcaea781eca1e96cc93d64d04",
+      "results.csv": "a3e545838417ce39677ca396e2dad94b5ce3bb339a012ea8b71e7a49caf8493b",
+      "warm_start_cases.csv": "6b0e4e4012a4aef6897e7d7f671345f7cfdf347fc62e3f51a8dad2827eb96eca"
+    }
+  },
+  "baseline_formal_milp": {
+    "original_campaign": "baseline_formal_milp",
+    "recorded_csv_sha256": {
+      "method_summary.csv": "f6674dbcdaf2f91f76f0fcd1b77ca0d2c720d1ec990bfffba7813d309a2a1558",
+      "specifications.csv": "ac44061fe39ff8e1a7b1dafce371203956c06a4860f8ed0d125114408dfaa5b2",
+      "results.csv": "43ccc8b259f409519e4257c76cd21430f455774714168acff780285fa61bac00",
+      "warm_start_cases.csv": "b56bbf09af165c86248896acf32613a1abd39806a0d0eed405c6a51339857c66"
+    }
+  },
+  "baseline_formal_cp": {
+    "original_campaign": "baseline_formal_cp",
+    "recorded_csv_sha256": {
+      "method_summary.csv": "b0af648c2c30f994339375c56eeb35c1e9c17372951a4c63c9bef14ef3f9df2c",
+      "specifications.csv": "ac44061fe39ff8e1a7b1dafce371203956c06a4860f8ed0d125114408dfaa5b2",
+      "results.csv": "e971f2f3c44505cd2b86d402d83e5038a2e30bcb35ea2d662e5ffa812ea72e1d",
+      "warm_start_cases.csv": "2e8b9ae5e286f1514cd482b170f08aab06eb0f3ef1e7e36cbaf2b5a03c7bfc8b"
+    }
+  },
+  "sensitivity_gamma_n30_m3": {
+    "original_campaign": "sensitivity_gamma_n30_m3",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "d841f5abd91190a60fad5db51579eeee237e3259f4378791efed799b5b59533d",
+      "sensitivity_pairs.csv": "69e85a43da646de714f06df3545a3eb5d6906435e6fad2c797d23ab4f92e6407",
+      "sensitivity_summary.csv": "b881f213d7f87fe8df53d1b7021f55533762b1186d178f7517438ac49e8b32e6",
+      "sensitivity_results.csv": "90eb3e11af23c515f8c8ccf4d9c6405b7470ee81d8ff830da7bb4935b00f041c"
+    }
+  },
+  "sensitivity_gamma_n40": {
+    "original_campaign": "sensitivity_gamma_n40",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "641873c34870ff8b289ac415217671f78661a11b1565071cbeb9563a8dc5b0ba",
+      "sensitivity_pairs.csv": "48f2fbbb1f62fdbf9f315d0e0e3f8b1d7cdf9b3e0815c1bd16ed5ad22ac0bbf6",
+      "sensitivity_summary.csv": "5f30b46e2319d378b57ee9f3ca725af4491387dc47c52f718ab25b7f74c82881",
+      "sensitivity_results.csv": "c941dbbb702ac09f24cdfee0f0590a43fe17d61159212be3ff4ef772eb629f27"
+    }
+  },
+  "sensitivity_crossed_n40_gamma0.5": {
+    "original_campaign": "sensitivity_crossed_n40_gamma0.5",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "175036aa4509a42873a88ff839fe6981351002cd310fb909c6cb53b4e860dc3a",
+      "sensitivity_pairs.csv": "7aab6024d75a86d149a5414fa1ef4c5d8658a3d232a7b83c29bf238b5e9ee7f6",
+      "sensitivity_summary.csv": "6694558cb89396c7db0a20f4d8ac7ca16fc2b5086b15fb9e35821325a35c82e0",
+      "sensitivity_results.csv": "ac89038ee0c799b5ac83cb4239a4b01593faaa9411e08abf1d2bfaec40a090e6"
+    }
+  },
+  "sensitivity_crossed_n40_gamma2": {
+    "original_campaign": "sensitivity_crossed_n40_gamma2",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "f43d034ce5f76c435393480c6ea1146f418c9092ab1e6362b3abc32bfce18052",
+      "sensitivity_pairs.csv": "b3b0b2b6b11f9c7955f5b5b8801d753c41fe4bf84f0b33600c8dde0fde059342",
+      "sensitivity_summary.csv": "3b4129036546b404e23c6ca326c1515ddf18b71a5b5d020ec95031c463714195",
+      "sensitivity_results.csv": "b080164f247fd8451dc3c71b3ef6044b075e6be4a1aa50559e507c28e628635b"
+    }
+  },
+  "sensitivity_crossed_n40_gamma4": {
+    "original_campaign": "sensitivity_crossed_n40_gamma4",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "15e388746fb7025ac84bef4a502fc2ba400b22713d17d0145fcac2798c81f5fe",
+      "sensitivity_pairs.csv": "b343e52296a552b092e7d51a5aef4cb64498f1efd95eb4e342eb8a7ade3e69fb",
+      "sensitivity_summary.csv": "168c992ca797a4584ce7923196487bc30bf72c1462da3914ff783c28f5a84921",
+      "sensitivity_results.csv": "e34d337693e8fb220a95cdd03003887f5f3c818ae6157b6303b569719fbc85f8"
+    }
+  },
+  "sensitivity_technology_n40": {
+    "original_campaign": "sensitivity_technology_n40",
+    "recorded_csv_sha256": {
+      "sensitivity_specifications.csv": "528cbd47dedb3e0515a1b27f43addb156baf0477cb81cdefd397a7bba2f9a5cd",
+      "sensitivity_pairs.csv": "52df0e4a72a695eb4697792b1be07d2b5589cf8bdbc3bee4509aaa1c1e3b34b4",
+      "sensitivity_summary.csv": "78a984222709343463b94cd1057750ad5aff9ed6eef0551baf1a15e75b4189ba",
+      "sensitivity_results.csv": "2ea1cf75ec20cfe9e5aa6004cb91bdb37c20ee6bfbd7e5ee16caf3e069bd6b21"
+    }
+  },
+  "model_comparison_n30_m3": {
+    "original_campaign": "model_comparison_n30_m3",
+    "recorded_csv_sha256": {
+      "model_results.csv": "0df50c1759f013a4e0330260f1b6007b31ce23cf3924c28540b94875887c90af",
+      "model_summary.csv": "784e0f0b02dac936996607fc975cb631d1ff50abdfc9f04dac4113f55ecee824",
+      "paired_comparison.csv": "3ca5a64a8874a2eff1f45c99c11163a54450f49beda8608e75ba8ae7bccd403d"
+    }
+  }
+}

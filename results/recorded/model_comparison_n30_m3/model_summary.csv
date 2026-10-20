@@ -1,0 +1,10 @@
+gamma,replications,mean_nominal_optimum,mean_two_stage_lower,mean_two_stage_upper,static_completed,static_optimal,static_penalty_exact,static_positive_penalty_certified,mean_static_lower,mean_static_upper,mean_static_penalty_lower,mean_static_penalty_upper,nominal_assignment_completed,nominal_assignment_optimal,nominal_assignment_penalty_exact,nominal_assignment_positive_penalty_certified,mean_nominal_assignment_lower,mean_nominal_assignment_upper,mean_nominal_assignment_penalty_lower,mean_nominal_assignment_penalty_upper
+0.0,10,27.4,27.4,27.4,10,10,10,0,27.4,27.4,0,0,10,10,10,0,27.4,27.4,0,0
+0.5,10,27.4,27.8,27.8,10,10,10,1,28,28,0.2,0.2,10,10,10,6,37.9,37.9,10.1,10.1
+1.0,10,27.4,28.5,28.5,10,10,10,6,29.9,29.9,1.4,1.4,10,10,10,10,44.6,44.6,16.1,16.1
+1.5,10,27.4,29.4,29.4,10,10,10,8,31.1,31.1,1.7,1.7,10,10,10,10,45,45,15.6,15.6
+2.0,10,27.4,30.4,30.4,10,10,10,9,32.7,32.7,2.3,2.3,10,10,10,10,45,45,14.6,14.6
+2.5,10,27.4,31.1,31.1,10,9,9,9,33.2,33.6,2.1,2.5,10,10,10,10,45.5,45.5,14.4,14.4
+3.0,10,27.4,31.6,31.6,10,9,9,8,33.6,34.3,2,2.7,10,10,10,10,46.6,46.6,15,15
+3.5,10,27.4,32.5,32.5,10,9,9,7,34.2,34.4,1.7,1.9,10,10,10,10,46.7,46.7,14.2,14.2
+4.0,10,27.4,33.3,33.3,10,9,9,9,35,35.2,1.7,1.9,10,10,10,10,46.7,46.7,13.4,13.4

@@ -1,0 +1,102 @@
+{
+  "agvs": 3,
+  "base_capacity_scale": 4.0,
+  "base_gamma": 2.0,
+  "base_recharge_factor": 2.0,
+  "capacity_scales": [
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0
+  ],
+  "configuration": "lbbd-hig",
+  "deviation": 0.3,
+  "deviation_values": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "due_date_range": 0.5,
+  "gamma_values": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "generator_seed": 2004000,
+  "hig_limit": 60.0,
+  "jobs": 40,
+  "metrics_limit": 30.0,
+  "nominal_energy_max": 20,
+  "processing_max": 20,
+  "recharge_factors": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "replications": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "schema": "agv-sensitivity-v1",
+  "settings": [
+    {
+      "capacity_scale": 4.0,
+      "deviation_level": 0.1,
+      "gamma": 2.0,
+      "recharge_factor": 2.0,
+      "setting_index": 1
+    },
+    {
+      "capacity_scale": 4.0,
+      "deviation_level": 0.2,
+      "gamma": 2.0,
+      "recharge_factor": 2.0,
+      "setting_index": 2
+    },
+    {
+      "capacity_scale": 4.0,
+      "deviation_level": 0.3,
+      "gamma": 2.0,
+      "recharge_factor": 2.0,
+      "setting_index": 3
+    },
+    {
+      "capacity_scale": 4.0,
+      "deviation_level": 0.4,
+      "gamma": 2.0,
+      "recharge_factor": 2.0,
+      "setting_index": 4
+    },
+    {
+      "capacity_scale": 4.0,
+      "deviation_level": 0.5,
+      "gamma": 2.0,
+      "recharge_factor": 2.0,
+      "setting_index": 5
+    }
+  ],
+  "solver_seed": 1,
+  "study": "deviation",
+  "tardiness_factor": 0.5,
+  "technology_mode": "crossed",
+  "total_limit": 1800.0
+}

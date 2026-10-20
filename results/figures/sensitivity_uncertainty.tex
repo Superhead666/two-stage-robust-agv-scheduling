@@ -1,0 +1,53 @@
+\begin{tikzpicture}
+\begin{groupplot}[
+    group style={group size=2 by 1,horizontal sep=10mm},
+    width=0.44\linewidth,
+    height=0.36\linewidth,
+    axis lines=left,
+    ymin=28,ymax=48,
+    ytick={28,32,36,40,44,48},
+    scaled ticks=false,
+    tick align=outside,
+    tick label style={font=\footnotesize},
+    label style={font=\small},
+    title style={font=\small},
+    ymajorgrids=true,
+    grid style={draw=gray!20,line width=0.2pt},
+    axis line style={line width=0.4pt},
+    legend style={font=\footnotesize,draw=none,fill=white,
+        at={(0.03,0.97)},anchor=north west,inner sep=1pt},
+    legend cell align=left,
+    clip=true
+]
+\nextgroupplot[
+    title={(a) Uncertainty budget},
+    xlabel={Uncertainty budget $\Gamma$},
+    ylabel={Worst-case maximum tardiness},
+    xmin=0,xmax=4,xtick={0,1,2,3,4}
+]
+\addplot[gray!55,line width=0.4pt,mark=none] coordinates {(0,31) (0.5,32) (1,35) (1.5,35) (2,36) (2.5,36) (3,36) (3.5,36) (4,37)};
+\addlegendentry{Instances}
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,33) (0.5,34) (1,35) (1.5,37) (2,37) (2.5,39) (3,41) (3.5,41) (4,43)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,37) (0.5,40) (1,40) (1.5,40) (2,41) (2.5,41) (3,42) (3.5,42) (4,42)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,34) (0.5,35) (1,37) (1.5,37) (2,38) (2.5,40) (3,40) (3.5,40) (4,41)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,38) (0.5,38) (1,41) (1.5,44) (2,44) (2.5,44) (3,44) (3.5,45) (4,45)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,31) (0.5,32) (1,34) (1.5,35) (2,35) (2.5,35) (3,37) (3.5,38) (4,38)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,31) (0.5,31) (1,32) (1.5,33) (2,34) (2.5,35) (3,35) (3.5,35) (4,35)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,30) (0.5,32) (1,35) (1.5,35) (2,35) (2.5,38) (3,39) (3.5,39) (4,39)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,35) (0.5,37) (1,39) (1.5,39) (2,41) (2.5,41) (3,41) (3.5,41) (4,42)};
+\addplot[gray!55,line width=0.4pt,mark=none,forget plot] coordinates {(0,38) (0.5,40) (1,41) (1.5,42) (2,43) (2.5,43) (3,43) (3.5,43) (4,46)};
+\addplot[blue!65!black,line width=1.2pt,mark=*,mark size=1.3pt] coordinates {(0,33.8) (0.5,35.1) (1,36.9) (1.5,37.7) (2,38.4) (2.5,39.2) (3,39.8) (3.5,40) (4,40.8)};
+\addlegendentry{Mean}
+\nextgroupplot[
+    title={(b) Deviation magnitude},
+    xlabel={Deviation level},
+    xmin=0.1,xmax=0.5,xtick={0.1,0.2,0.3,0.4,0.5}
+]
+\addplot[blue!65!black,solid,mark=*,line width=0.9pt,mark size=1.3pt] coordinates {(0.1,34.8) (0.2,34.9) (0.3,35.1) (0.4,35.8) (0.5,36.4)};
+\addlegendentry{$\Gamma=0.5$}
+\addplot[orange!75!black,dashed,mark=square*,line width=0.9pt,mark size=1.3pt] coordinates {(0.1,35.5) (0.2,37.2) (0.3,38.4) (0.4,39.6) (0.5,40.8)};
+\addlegendentry{$\Gamma=2$}
+\addplot[black!75,densely dotted,mark=triangle*,line width=0.9pt,mark size=1.3pt] coordinates {(0.1,36.9) (0.2,39) (0.3,40.8) (0.4,43.3) (0.5,45.7)};
+\addlegendentry{$\Gamma=4$}
+\end{groupplot}
+\end{tikzpicture}

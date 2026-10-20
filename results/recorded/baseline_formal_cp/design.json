@@ -1,0 +1,82 @@
+{
+  "configurations": [
+    "cp-basic",
+    "cp-hig"
+  ],
+  "hig_limit": 60.0,
+  "mode": "generated",
+  "schema": "ejor-part1-v5",
+  "solver_seed": 1,
+  "source": {
+    "agvs": [
+      2,
+      3
+    ],
+    "capacity_scale": [
+      4.0
+    ],
+    "common_random_numbers": "size_pair_and_replication",
+    "deviation": [
+      0.3
+    ],
+    "due_date_factor": null,
+    "due_date_range": 0.5,
+    "gamma": [
+      1.0,
+      3.0
+    ],
+    "generator_seed": 2000000,
+    "nominal_energy_max": [
+      20
+    ],
+    "pair_seed_offset": 0,
+    "pair_seed_stride": 1000,
+    "processing_max": [
+      20
+    ],
+    "recharge_factor": [
+      2.0
+    ],
+    "recharge_time": null,
+    "replications": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "size_mode": "explicit",
+    "size_pairs": [
+      [
+        20,
+        2
+      ],
+      [
+        20,
+        3
+      ],
+      [
+        30,
+        2
+      ],
+      [
+        30,
+        3
+      ]
+    ],
+    "tardiness_factor": [
+      0.3,
+      0.5
+    ],
+    "target_jobs": [
+      20,
+      30
+    ]
+  },
+  "total_limit": 1800.0
+}

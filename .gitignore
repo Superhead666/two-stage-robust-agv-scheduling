@@ -1,0 +1,10 @@
+build*/
+runs/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+*.lic
+gurobi.env
+*.log

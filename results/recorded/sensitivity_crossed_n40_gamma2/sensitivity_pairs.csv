@@ -1,0 +1,6 @@
+deviation_level,pairs,both_optimal,mean_final_upper_change_from_reference,upper_better,upper_tied,upper_worse,completion_pairs,mean_nominal_maximum_completion_change_from_reference,mean_nominal_recharge_change_from_reference
+0.1,10,10,-2.9,10,0,0,10,-2.5,-0.6
+0.2,10,10,-1.2,8,2,0,10,-0.7,-0.4
+0.3,10,10,0.0,0,10,0,10,0.0,0.0
+0.4,10,10,1.2,0,5,5,10,1.7,0.2
+0.5,10,10,2.4,0,1,9,10,1.3,0.2
