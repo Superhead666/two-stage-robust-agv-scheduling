@@ -174,57 +174,6 @@ python3 scripts/reproduce.py sensitivity --study technology \
 The three commands cover 90 budget runs, 150 budget–deviation runs, and 250
 capacity–swapping-duration runs. Each setting has ten paired replications.
 
-### Select a smaller panel or change time limits
-
-```bash
-python3 scripts/reproduce.py benchmark \
-  --jobs 40 --agvs 3 --gamma 1 --beta 0.50 --replications 1 2 \
-  --methods lbbd-hig --total-limit 300 --hig-limit 30 \
-  --output runs/selected_panel --dry-run
-```
-
-Remove `--dry-run` to execute. Add `--resume` to continue an interrupted output
-directory with unchanged settings. `--prepare-only` prepares the run without
-executing the solvers. For sensitivity studies, additional filters include
-`--deviations`, `--capacity-scales`, and `--recharge-factors`. Archive selection
-does not generate new parameter levels.
-
-The lower-level drivers support new parameter panels and imported instances:
-
-```bash
-python3 scripts/run_experiment.py --help
-python3 scripts/run_sensitivity.py --help
-python3 scripts/run_model_comparison.py --help
-```
-
-The experiment driver supports explicit size–fleet pairs, uncertainty levels,
-processing and energy distributions, capacities, due-date parameters, swapping
-durations, replications, and solver limits. It freezes the executables and
-instances for each new run and validates their hashes before resuming.
-
-## Result interpretation and reproducibility
-
-`final_lower` and `final_upper` are bounds on worst-case maximum tardiness.
-`relative_gap` is a fraction; multiply by 100 to obtain a percentage. Interrupted
-verification leaves a valid interval and is not treated as a proof. HIG time is
-included in the total 1800-second allowance. The postprocessing script uses
-pooled lower bounds for solution deviations and each method's own lower bound
-for its optimality gap, as specified in the manuscript.
-
-The source implements the final manuscript design. The recorded campaigns
-precede the final HIG revisions, including its candidate-screening and
-verification policy and the common 0.1-second verification-call allowance.
-Their result files have not been replaced by results from the revised code.
-Consequently, this release does not claim identical warm starts, solver paths,
-or running times when rerunning the current source. The original executable
-hashes are retained in `results/recorded`; historical executables and commercial
-solver libraries are not distributed. See
-[docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) for the scope of the checks.
-
-The supported instance representation uses at most 62 jobs and 32 AGVs. The
-published panels remain below these limits. Every job must fit in a fully
-charged battery at its maximum energy consumption.
-
 ## License and support
 
 The source code, documentation, and generated data in this release are
